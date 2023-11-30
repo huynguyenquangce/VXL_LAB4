@@ -21,8 +21,8 @@ void SCH_Add_Task (void(*pFunction)(),uint32_t DELAY,uint32_t PERIOD)
 	if(current_index_task < SCH_MAX_TASKS)
 	{
 		SCH_tasks_G[current_index_task].pTask = pFunction;
-		SCH_tasks_G[current_index_task].Delay = DELAY;
-		SCH_tasks_G[current_index_task].Period = PERIOD;
+		SCH_tasks_G[current_index_task].Delay = DELAY/TICK;
+		SCH_tasks_G[current_index_task].Period = PERIOD/TICK;
 		SCH_tasks_G[current_index_task].RunMe = 0;
 
 		SCH_tasks_G[current_index_task].TaskID = current_index_task;

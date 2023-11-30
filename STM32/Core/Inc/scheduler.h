@@ -7,7 +7,7 @@
 
 #ifndef INC_SCHEDULER_H_
 #define INC_SCHEDULER_H_
-
+#define TICK 10
 #include <stdint.h>
 
 typedef struct{

@@ -8,6 +8,7 @@
 #ifndef INC_SOFTWARETIMER_H_
 #define INC_SOFTWARETIMER_H_
 
+#define TICK 10
 ////////////////////////////////////////////////////
 extern int timer1_flag;                   //
                                           // FOR LANE 1
